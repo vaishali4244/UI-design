@@ -1,0 +1,164 @@
+.sidebar-container {
+  box-sizing: border-box;
+  width: 22vw;
+  height: auto;
+  border: 1px solid rgb(204, 230, 165);
+  border-radius: 12px;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgb(204, 230, 165);
+  background-color: rgb(204, 230, 165);
+  /* border-radius: 6px; */
+}
+
+/* .main-sidebar {
+  width: 21vw;
+  height: auto;
+} */
+
+.company-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh;
+  /* border: 1px solid rgb(215, 217, 220); */
+  margin: 5px 5px;
+}
+.company-name .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* text-align:justify; */
+  height: 10vh;
+  width: 12vw;
+  /* border: 1px solid rgb(155 161 167); */
+  padding: 0;
+}
+
+.company-name .name h1,
+.company-name .name p {
+  /* /* padding: 0 3px; */
+  margin: 0;
+  margin-right: 0.2rem;
+}
+
+.icon{
+width: 4rem;
+height: 4rem;
+background: black;
+color: white;
+display: flex;
+justify-content: center;
+  align-items: center;
+}
+
+.company-name img{
+margin-left: 1rem;
+}
+
+.main-sidebar {
+  height: auto;
+}
+
+.sidebar-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(235, 235, 247);
+  background: rgb(231, 231, 243);
+  border-radius: 6px;
+}
+.sidebar-container li {
+/* .main-sidebar li { */
+  /* width: 98%; */
+  border: 1px solid rgb(231, 231, 243);
+  /* border-style: none; */
+  margin: 5px 10px;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.folder{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-container li i {
+/* .main-sidebar li i { */
+  margin: 5px 10px;
+  padding: 0;
+}
+
+.sidebar-container .li-drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid rgb(231, 231, 243);
+  border-radius: 6px;
+}
+
+.sidebar-container .li-drop:first-child  {
+/* .main-sidebar .li-drop:first-child  { */
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-btn{
+  width:19vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-container ul li button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-container li .billing {
+  background: black;
+  color: white;
+  margin: 0 8px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.dropdown-content{
+  width:98%;
+}
+
+.li-trial {
+  /* width: 18vw; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sidebar-container li:hover{
+  border: 1px solid rgb(187, 161, 89);
+  background: rgb(187, 161, 89);
+  border-radius: 6px;
+  cursor: pointer;
+} 
+.sidebar-container button:hover{
+  cursor: pointer;
+} 
+
+.sidebar-container .li-drop:hover {
+  border: 1px solid rgb(196, 219, 225);
+  background: rgb(196, 219, 225);
+  border-radius: 6px;
+}
