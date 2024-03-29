@@ -95,36 +95,41 @@ border: none;
   background: rgb(243, 134, 134);
 }
 
-#product-table {
+.product-table {
   box-sizing: border-box;
   width: 74vw;
   height: 65vh;
   border: 1px solid red;
 }
 
-#product-table th {
-  height: 2rem;
+.product-table th {
+  /* height: 2rem; */
   border: 1px solid rgb(155 161 167);
   text-align: left;
   border-radius: 6px;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   font-size: 1.2rem;
   font-weight: 400;
 }
-#product-table td {
+.product-table td {
   border: 1px solid rgb(155 161 167);
   border-radius: 6px;
   padding: 0px 10px;
 }
 
-#product-table thead tr {
+.product-table thead tr {
   border: 1px solid rgb(155 161 167);
   /* width: 76vw; */
 
 }
 
-#product-table tbody {
+.product-table tbody {
   border: 1ps solid rgb(155 161 167);
+}
+
+.product-table input {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .brand-name {
@@ -137,9 +142,19 @@ border: none;
   text-align: right;
 }
 
-.checkbox{
-  height: 1.5rem;
-  border: 1px solid yellow;
+
+td img{
+height: 2rem;
+width: 2rem;
+position: static;
+right: 0.3rem;
+}
+
+td span{
+  border: 1px solid rgb(229, 226, 226);
+  background: rgb(240, 238, 238);
+  padding: 2px 4px;
+  border-radius: 6px;
 }
 
 .table-options {
@@ -160,6 +175,22 @@ border: none;
   border-radius: 8px;
 }
 
+.red{
+  border:1px solid rgb(224, 178, 178);
+  background: rgb(224, 178, 178);
+}
+.green{
+  border:1px solid rgb(178, 224, 180);
+  background: rgb(178, 224, 180);
+}
+.blue{
+  border:1px solid rgb(191, 191, 242);
+  background: rgb(191, 191, 242);
+}
+.grey{
+  border:1px solid rgb(223, 221, 221);
+  background: rgb(223, 221, 221);
+}
 
 .search-option i:hover,.search-option input:hover{
 background:  rgb(210, 246, 210);
