@@ -19,7 +19,6 @@ const Products = () => {
 
     ];
 
-
     const searchFunc = (event) => {
         setSearch(event.target.value);
     };
@@ -88,11 +87,11 @@ const Products = () => {
                                 <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
                             </th>
                             <th>Description</th>
-                            <th>Members</th>
+                            <th className='hide-row'>Members</th>
                             <th>Categories</th>
-                            <th>Tags</th>
+                            <th className='hide-row'>Tags</th>
                             <th>Next Meeting</th>
-                            <th>
+                            <th className='hide-row'>
                                 <i className='fa fa-plus' style={{ fontSize: "20px" }}></i>
                             </th>
                         </tr>
@@ -104,15 +103,15 @@ const Products = () => {
                             <tr key={index}>
                                 <td className='brand-center'><input type="checkbox" />{item.brand}</td>
                                 <td>{item.description}</td>
-                                <td>
+                                <td className='hide-row'>
                                     {item.members.map((member, i) => (
                                         <img key={i} src={require(`../assets/images/${member}`)} alt="face" />
                                     ))}
                                 </td>
                                 <td ><span className={item.ctBg}>{item.categories}</span></td>
-                                <td>{item.tags.map((tag, i) => <span key={i}>{tag}</span>)}</td>
+                                <td className='hide-row'>{item.tags.map((tag, i) => <span key={i}>{tag}</span>)}</td>
                                 <td ><span className={item.bg}>{item.nextMeeting}</span></td>
-                                <td></td>
+                                <td className='hide-row'></td>
                             </tr>
 
                         ))}
@@ -127,10 +126,10 @@ const Products = () => {
                             <td>
                                 <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
                                 Add calculation</td>
-                            <td>
-                                <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
+                            <td className="hide-row">
+                                <i className='fa fa-plus-square-o  ' style={{ fontSize: "20px", color: "grey" }}></i>
                                 Add calculation</td>
-                            <td></td>
+                            <td className="hide-row"></td>
                         </tr>
                     </tbody>
 

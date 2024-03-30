@@ -7,7 +7,7 @@
   height: auto;
 }
 
-.noData{
+.noData {
   height: 10vh;
   width: 15vw;
   display: flex;
@@ -23,6 +23,12 @@ h3 {
   font-size: 1.5rem;
 }
 
-.link{
+.link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
 }

@@ -159,3 +159,27 @@
   background: rgb(225, 224, 224);
   border: 1px solid rgb(215, 213, 213);
 }
+
+@media screen and (max-width: 1200px) {
+  .company-name {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 0;
+  }
+
+  .company-name img {
+    margin-left: 0.5rem;
+  }
+
+  .company-name .name {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar-container {
+    width: 90vw;
+  }
+}
