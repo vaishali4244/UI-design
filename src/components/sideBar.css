@@ -2,22 +2,21 @@
   box-sizing: border-box;
   width: 22vw;
   height: auto;
-  border: 1px solid rgb(204, 230, 165);
   border-radius: 12px;
-  padding: 0.3rem;
-  margin: 0.3rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgb(204, 230, 165);
-  background-color: rgb(204, 230, 165);
+  border: 1px solid rgb(240, 238, 238);
+  background-color: white;
 }
 
 .company-name {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 12vh;
+  height: 11vh;
   margin: 5px 5px;
 }
 
@@ -27,19 +26,25 @@
   justify-content: center;
   align-items: flex-start;
   height: 10vh;
-  width: 12vw;
+  width: 10vw;
   padding: 0;
 }
 
-.company-name .name h1,
-.company-name .name p {
+.company-name .name h1{
+  font-size: 1.6rem;
   margin: 0;
   margin-right: 0.2rem;
 }
 
+.company-name .name p {
+  margin: 0;
+  margin-right: 0.2rem;
+  font-size: 0.9rem;
+}
+
 .icon {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   background: black;
   color: white;
   display: flex;
@@ -48,7 +53,7 @@
 }
 
 .company-name img {
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 }
 
 .main-sidebar {
@@ -59,16 +64,16 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  border: 1px solid rgb(235, 235, 247);
-  background: rgb(231, 231, 243);
-  border-radius: 6px;
 }
+
 .sidebar-container li {
   border: 1px solid rgb(231, 231, 243);
-  margin: 5px 10px;
-  padding: 4px 5px;
+  border-radius: 6px;
+  margin: 2px 10px;
+  padding: 3px 5px;
   display: flex;
   align-items: center;
+  font-size: 0.9rem;
 }
 
 .folder {
@@ -125,6 +130,10 @@
   width: 98%;
 }
 
+.dropdown-content li{
+  background: white;
+}
+
 .li-trial {
   display: flex;
   justify-content: space-evenly;
@@ -132,8 +141,7 @@
 }
 
 .sidebar-container li:hover {
-  border: 1px solid rgb(187, 161, 89);
-  background: rgb(187, 161, 89);
+  background: rgb(240, 238, 238);
   border-radius: 6px;
   cursor: pointer;
 }
@@ -143,7 +151,11 @@
 }
 
 .sidebar-container .li-drop:hover {
-  border: 1px solid rgb(196, 219, 225);
-  background: rgb(196, 219, 225);
+  background: rgb(240, 238, 238);
   border-radius: 6px;
+}
+
+.dropdown-content li:hover{
+  background: rgb(225, 224, 224);
+  border: 1px solid rgb(215, 213, 213);;
 }

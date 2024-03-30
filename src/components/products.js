@@ -42,18 +42,18 @@ const Products = () => {
                 <div className="product-heading">
                     <h3>Products</h3>
                     <div className="search-option">
-                        <i className="fa fa-search" style={{ fontSize: "24px" }}></i>
+                        <i className="fa fa-search" style={{ fontSize: "20px" }}></i>
                         <input type="text" id="searchInput" placeholder="Search for brand..."
                             value={search}
                             onChange={searchFunc}
                         />
-                        <i className="fa fa-commenting-o" style={{ fontSize: "24px" }}></i>
-                        <i className="fa fa-cog" style={{ fontSize: "24px" }}></i>
+                        <i className="fa fa-commenting-o" style={{ fontSize: "20px" }}></i>
+                        <i className="fa fa-cog" style={{ fontSize: "20px" }}></i>
                     </div>
                 </div>
                 <div className="product-filter">
                     <div className="start">
-                        <button className="filter-btn"> <i className='fa fa-file-picture-o' style={{ fontSize: "24px" }}></i>All brands
+                        <button className="filter-btn"> <i className='fa fa-file-picture-o' style={{ fontSize: "20px" }}></i>All brands
                             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
                         </button>
                         <button className="filter-btn">Desk
@@ -63,16 +63,16 @@ const Products = () => {
                             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
                         </button>
                         <button className="filter-btn">
-                            <i className='fa fa-building-o' style={{ fontSize: "24px" }}></i>
+                            <i className='fa fa-building-o' style={{ fontSize: "20px" }}></i>
                             Sort</button>
                         <button className="filter-btn">
-                            <i className='fa fa-bar-chart' style={{ fontSize: "24px" }}></i>
+                            <i className='fa fa-bar-chart' style={{ fontSize: "20px" }}></i>
                             Filter</button>
                     </div>
 
                     <div className="end">
-                        <button className="filter-btn"> <i className='fa fa-share-alt' style={{ fontSize: "24px" }}></i>Meeting</button>
-                        <button className="filter-btn"> <i className='fa fa-black-tie' style={{ fontSize: "24px" }}></i>Import/Export</button>
+                        <button className="filter-btn"> <i className='fa fa-share-alt' style={{ fontSize: "20px" }}></i>Meeting</button>
+                        <button className="filter-btn"> <i className='fa fa-black-tie' style={{ fontSize: "20px" }}></i>Import/Export</button>
                     </div>
 
                 </div>
@@ -85,7 +85,7 @@ const Products = () => {
                                     <input
                                         type="checkbox" /> Brand
                                 </span>
-                                <i className='fa fa-plus-square-o ' style={{ fontSize: "24px", color: "grey" }}></i>
+                                <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
                             </th>
                             <th>Description</th>
                             <th>Members</th>
@@ -102,7 +102,7 @@ const Products = () => {
 
                         {filteredData.map((item, index) => (
                             <tr key={index}>
-                                <td><input type="checkbox" />{item.brand}</td>
+                                <td className='brand-center'><input type="checkbox" />{item.brand}</td>
                                 <td>{item.description}</td>
                                 <td>
                                     {item.members.map((member, i) => (
@@ -116,6 +116,22 @@ const Products = () => {
                             </tr>
 
                         ))}
+                        <tr className='table-counts'>
+                                <td className=''>10 count</td>
+                                <td>
+                                <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
+                                    Add calculation</td>
+                                <td>
+                                <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
+                                    Add calculation</td>
+                                <td>
+                                <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
+                                    Add calculation</td>
+                                <td>
+                                <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
+                                    Add calculation</td>
+                                <td></td>
+                            </tr>
                     </tbody>
 
                 </table>
@@ -131,7 +147,9 @@ const Products = () => {
                             <i className='fa fa-file-text-o' style={{ fontSize: "20px" }}></i>
                             Archieve
                         </p>
-                        <p style={{ color: "red", border: "1px solid red" }}>
+                        <p
+                        style={{ color: " rgb(226, 88, 88)", border: "1px solid rgb(226, 88, 88)" }}
+                        >
                             <i className='fa fa-trash' style={{ fontSize: "20px" }}></i>
                             Delete
                         </p>
@@ -139,7 +157,7 @@ const Products = () => {
                             More
                             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
                         </p>
-                        <i className='fa fa-times cross' style={{ fontSize: "24px" }} onClick={hideFunc}></i>
+                        <i className='fa fa-times cross' style={{ fontSize: "20px" }} onClick={hideFunc}></i>
                     </div>
                 )}
             </section>

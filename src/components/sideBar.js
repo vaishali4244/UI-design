@@ -3,7 +3,7 @@ import './sideBar.css';
 
 
 const SideBar = () => {
-  const [dropdown1Show, setDropdown1Show] = useState(true);
+  const [dropdown1Show, setDropdown1Show] = useState(false);
   const [dropdown2Show, setDropdown2Show] = useState(false);
   const [dropdown3Show, setDropdown3Show] = useState(false);
 
@@ -35,8 +35,8 @@ const SideBar = () => {
         <img
           src={require("../assets/images/face2.jpg")}
           alt="face"
-          height={50}
-          width={50} />
+          height={40}
+          width={40} />
       </div>
 
       <ul>
@@ -45,7 +45,7 @@ const SideBar = () => {
           <button>
             <i
               className='fa fa-delicious'
-              style={{ fontSize: "24px" }}></i>
+              style={{ fontSize: "20px" }}></i>
             Design Team</button>
         </li>
 
@@ -53,37 +53,37 @@ const SideBar = () => {
           <button href="#">
             <i
               className='fa fa-google-wallet'
-              style={{ fontSize: "24px" }}></i>
+              style={{ fontSize: "20px" }}></i>
             Marketing Team
           </button>
         </li>
 
         <li>
           <button>
-            <i className='fa fa-dot-circle-o' style={{ fontSize: "24px" }}></i>
+            <i className='fa fa-dot-circle-o' style={{ fontSize: "20px" }}></i>
             Development Team
           </button>
         </li>
         <li>
           <button disabled >
-            <i className='fa fa-plus-square' style={{ fontSize: "24px" }}></i>
+            <i className='fa fa-plus-square' style={{ fontSize: "20px" }}></i>
             Create a team
           </button>
         </li>
 
         <li className='folder' >
           <button disabled>
-            <i className='fa fa-dot-circle-o' style={{ fontSize: "24px" }}></i>
+            <i className='fa fa-dot-circle-o' style={{ fontSize: "20px" }}></i>
             FOLDERS
           </button>
-          <i className='fa fa-plus-square-o' style={{ fontSize: "24px", color: "grey" }}></i>
+          <i className='fa fa-plus-square-o' style={{ fontSize: "20px", color: "grey" }}></i>
         </li>
 
         <li className='li-drop'>
 
           <div className="dropdown-btn" onClick={toggleDropdown1}>
             <button >
-              <i className='fa fa-eraser' style={{ fontSize: "24px" }}></i>
+              <i className='fa fa-eraser' style={{ fontSize: "20px" }}></i>
               Products
             </button>
             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
@@ -100,7 +100,7 @@ const SideBar = () => {
                 <li> <button >Analytics</button></li>
                 <li>
                   <button disabled>
-                    <i className='fa fa-plus-square' style={{ fontSize: "24px" }}></i>
+                    <i className='fa fa-plus-square' style={{ fontSize: "20px" }}></i>
                     Add new sub
                   </button>
                 </li>
@@ -116,7 +116,7 @@ const SideBar = () => {
 
           <div className="dropdown-btn" onClick={toggleDropdown2}>
             <button >
-              <i className='fa fa-eraser' style={{ fontSize: "24px" }}></i>
+              <i className='fa fa-eraser' style={{ fontSize: "20px" }}></i>
               Sales
             </button>
             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
@@ -129,7 +129,7 @@ const SideBar = () => {
                 <li> <button >Roadmap</button></li>
                 <li> <button >Feedback</button></li>
                 <li> <button disabled>
-                  <i className='fa fa-plus-square' style={{ fontSize: "24px" }}></i>
+                  <i className='fa fa-plus-square' style={{ fontSize: "20px" }}></i>
                   Add new sub
                 </button>
                 </li>
@@ -144,7 +144,7 @@ const SideBar = () => {
 
           <div className="dropdown-btn" onClick={toggleDropdown3}>
             <button >
-              <i className='fa fa-eraser' style={{ fontSize: "24px" }}></i>
+              <i className='fa fa-eraser' style={{ fontSize: "20px" }}></i>
               Design
             </button>
             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
@@ -159,7 +159,7 @@ const SideBar = () => {
                 <li> <button >Roadmap</button></li>
                 <li> <button >Feedback</button></li>
                 <li > <button disabled>
-                  <i className='fa fa-plus-square' style={{ fontSize: "24px" }}></i>
+                  <i className='fa fa-plus-square' style={{ fontSize: "20px" }}></i>
                   Add new sub
                 </button>
                 </li>
@@ -173,13 +173,13 @@ const SideBar = () => {
 
         <li>
           <button href="#">
-            <i className='fa fa-eraser' style={{ fontSize: "24px" }}></i>
+            <i className='fa fa-eraser' style={{ fontSize: "20px" }}></i>
             Office
           </button>
         </li>
         <li>
           <button href="#">
-            <i className='fa fa-eraser' style={{ fontSize: "24px" }}>
+            <i className='fa fa-eraser' style={{ fontSize: "20px" }}>
             </i>
             Legal
           </button>
@@ -190,8 +190,8 @@ const SideBar = () => {
       <div className="lower-container">
 
         <ul>
-          <li><i className='	fa fa-odnoklassniki' style={{ fontSize: "24px" }} />Invite teammates</li>
-          <li><i className='fa fa-play-circle-o' style={{ fontSize: "24px" }} />Help and first steps</li>
+          <li><i className='	fa fa-odnoklassniki' style={{ fontSize: "20px" }} />Invite teammates</li>
+          <li><i className='fa fa-play-circle-o' style={{ fontSize: "20px" }} />Help and first steps</li>
           <li className='li-trial '>
             3 days left on trial
             <span className='billing'>
