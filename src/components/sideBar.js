@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './sideBar.css';
 
 
@@ -42,27 +43,33 @@ const SideBar = () => {
       <ul>
 
         <li>
+          <Link className="link" to='/designteam'>
           <button>
             <i
               className='fa fa-delicious'
               style={{ fontSize: "20px" }}></i>
             Design Team</button>
+            </Link>
         </li>
 
         <li>
+        <Link className="link" to='/marketingteam'>
           <button href="#">
             <i
               className='fa fa-google-wallet'
               style={{ fontSize: "20px" }}></i>
             Marketing Team
           </button>
+         </Link>
         </li>
 
         <li>
+          <Link className="link" to='/developmentteam'>
           <button>
             <i className='fa fa-dot-circle-o' style={{ fontSize: "20px" }}></i>
             Development Team
           </button>
+          </Link>
         </li>
         <li>
           <button disabled >
@@ -80,7 +87,7 @@ const SideBar = () => {
         </li>
 
         <li className='li-drop'>
-
+<Link className="link" to='/'>
           <div className="dropdown-btn" onClick={toggleDropdown1}>
             <button >
               <i className='fa fa-eraser' style={{ fontSize: "20px" }}></i>
@@ -88,7 +95,7 @@ const SideBar = () => {
             </button>
             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
           </div>
-
+          </Link> 
           {dropdown1Show && (
 
             <div className="dropdown-content">
@@ -113,6 +120,7 @@ const SideBar = () => {
         </li>
 
         <li className='li-drop'>
+<Link className="link" to='/sales' >
 
           <div className="dropdown-btn" onClick={toggleDropdown2}>
             <button >
@@ -121,7 +129,7 @@ const SideBar = () => {
             </button>
             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
           </div>
-
+          </Link>
           {dropdown2Show && (
 
             <div className="dropdown-content">
@@ -141,7 +149,7 @@ const SideBar = () => {
         </li>
 
         <li className='li-drop'>
-
+<Link className="link" to='/design'>
           <div className="dropdown-btn" onClick={toggleDropdown3}>
             <button >
               <i className='fa fa-eraser' style={{ fontSize: "20px" }}></i>
@@ -150,7 +158,7 @@ const SideBar = () => {
             <i className='fa fa-caret-down' style={{ fontSize: "20px" }}></i>
 
           </div>
-
+          </Link>
           {dropdown3Show && (
 
             <div className="dropdown-content">
@@ -172,17 +180,21 @@ const SideBar = () => {
         </li>
 
         <li>
+          <Link className="link" to='/office'>
           <button href="#">
             <i className='fa fa-eraser' style={{ fontSize: "20px" }}></i>
             Office
           </button>
+          </Link>
         </li>
         <li>
+          <Link className="link" to='/legal'>
           <button href="#">
             <i className='fa fa-eraser' style={{ fontSize: "20px" }}>
             </i>
             Legal
           </button>
+          </Link>
         </li>
 
       </ul>
