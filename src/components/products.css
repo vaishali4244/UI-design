@@ -1,7 +1,7 @@
 .table-content {
   box-sizing: border-box;
   width: 76vw;
-  height: auto;
+  height: 97vh;
   padding: 0.3rem;
   margin: 0.3rem;
   border: 1px solid rgb(235, 237, 240);
@@ -230,6 +230,7 @@ td span {
 }
 
 @media screen and (max-width: 1400px) {
+  
   .table-options {
     position: static;
     flex-wrap: wrap;
@@ -239,6 +240,9 @@ td span {
 }
 
 @media screen and (max-width: 1200px) {
+  .table-content{
+    height: auto;
+  }
   .product-heading {
     justify-content: space-evenly;
   }
