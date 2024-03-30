@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const SamplePage = ({data}) => {
+const SamplePage = ({ data }) => {
     return (
         <article className='main-container'>
             <div className="product-heading">

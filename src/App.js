@@ -12,13 +12,13 @@ function App() {
       <SideBar />
       <Routes>
         <Route path='/' element={<Products />} />
-        <Route path='/designteam' element={<SamplePage data={sampleData[0]}/>} />
-        <Route path='/marketingteam' element={<SamplePage data={sampleData[1]}/>} />
-        <Route path='/developmentteam' element={<SamplePage data={sampleData[2]}/>} />
-        <Route path='/sales' element={<SamplePage data={sampleData[3]}/>} />
-        <Route path='/design' element={<SamplePage data={sampleData[4]}/>} />
-        <Route path='/office' element={<SamplePage data={sampleData[5]}/>} />
-        <Route path='/legal' element={<SamplePage data={sampleData[6]}/>} />
+        <Route path='/designteam' element={<SamplePage data={sampleData[0]} />} />
+        <Route path='/marketingteam' element={<SamplePage data={sampleData[1]} />} />
+        <Route path='/developmentteam' element={<SamplePage data={sampleData[2]} />} />
+        <Route path='/sales' element={<SamplePage data={sampleData[3]} />} />
+        <Route path='/design' element={<SamplePage data={sampleData[4]} />} />
+        <Route path='/office' element={<SamplePage data={sampleData[5]} />} />
+        <Route path='/legal' element={<SamplePage data={sampleData[6]} />} />
       </Routes>
     </div>
   );

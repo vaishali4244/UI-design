@@ -117,21 +117,21 @@ const Products = () => {
 
                         ))}
                         <tr className='table-counts'>
-                                <td className=''>10 count</td>
-                                <td>
+                            <td className=''>10 count</td>
+                            <td>
                                 <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
-                                    Add calculation</td>
-                                <td>
+                                Add calculation</td>
+                            <td>
                                 <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
-                                    Add calculation</td>
-                                <td>
+                                Add calculation</td>
+                            <td>
                                 <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
-                                    Add calculation</td>
-                                <td>
+                                Add calculation</td>
+                            <td>
                                 <i className='fa fa-plus-square-o ' style={{ fontSize: "20px", color: "grey" }}></i>
-                                    Add calculation</td>
-                                <td></td>
-                            </tr>
+                                Add calculation</td>
+                            <td></td>
+                        </tr>
                     </tbody>
 
                 </table>
@@ -148,7 +148,7 @@ const Products = () => {
                             Archieve
                         </p>
                         <p
-                        style={{ color: " rgb(226, 88, 88)", border: "1px solid rgb(226, 88, 88)" }}
+                            style={{ color: " rgb(226, 88, 88)", border: "1px solid rgb(226, 88, 88)" }}
                         >
                             <i className='fa fa-trash' style={{ fontSize: "20px" }}></i>
                             Delete
